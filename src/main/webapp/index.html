@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="ui.bootstrap.demo">
+  <head>
+    <title>勤怠管理システム</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="resource/js/angular.min.js"></script>
+    <script src="resource/js/angular-animate.min.js"></script>
+    <script src="resource/js/ui-bootstrap-tpls-0.13.4.min.js"></script>
+    <script src="app/js/app.js"></script>
+    <link href="app/css/style.css" rel="stylesheet" />
+    <link href="resource/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <!--<div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>-->
+          <a class="navbar-brand" href="#">勤怠管理システム</a>
+<!--        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div class="container body">
+      <div class="panel panel-default">
+        <div class="panel-heading">ログイン</div>
+        <div class="panel-body">
+          <form name="loginForm" action="rest/login" method="POST">
+            <div class="login-form-body">
+              <label for="username" class="label label-default">ユーザ名</label>
+              <div class="input-group">
+                <input type="text" name="username" class="form-control" placeholder="username" />
+              </div>
+              <label for="password" class="label label-default">パスワード</label>
+              <div class="input-group">
+                <input type="text" name="password" class="form-control" placeholder="password" />
+              </div>
+              <button type="submit" class="btn btn-default">ログイン</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
